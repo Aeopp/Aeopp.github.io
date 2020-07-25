@@ -12,5 +12,5 @@ My name is Ho Jun Lee. I have the following qualities:
 What else do you need?
 
 ### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+I have experience in making DirectX2DGame by myself. The development period is about 10 days.
+[DirectX_2D_MapleStoryGameCopied](https://github.com/Aeopp/DirectX2D_Game_MapleStory_Copie).
