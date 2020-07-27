@@ -1,1 +1,18 @@
 
+---
+layout: post
+title: Window OS 파일 검색 기준 디렉터리 목록
+subtitle: Windows
+gh-repo: daattali/beautiful-jekyll
+gh-badge: [star, fork, follow]
+tags: [test]
+comments: true
+---
+
+## 다음은 Window OS 에서 파일 검색할때 참조하는 기준 디렉터리 목록이다.
+ * 1. 현재 실행중인 프로그램이 로드(Load) 된 디렉터리 (실행파일이 존재하는 디렉터리)
+ * 2. 현재 디렉터리 (프로그램 실행도중 현재 디렉터리를 바꾸지 않는 이상 기본적으로 1번과 같다.)
+ * 3. 시스템 디렉터리 (C:Windows\\system32)
+ * 4. Windows 디렉터리 (C:Windows)
+ * 5. 환경변수 PATH 에 등록된 Key 로 얻어온 Value
+ 
