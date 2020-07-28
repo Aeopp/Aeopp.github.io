@@ -1,0 +1,32 @@
+---
+layout: post
+title: C++ Object Alignment 
+subtitle: 객체 메모리 정렬
+gh-repo: 
+gh-badge: [star, fork, follow]
+tags: [C++]
+comments: true
+---
+
+* 클래스,구조체의 데이터 멤버는 해당 데이터 멤버의 데이터 크기의 배수의 바이트 위치에서 시작한다.
+Example int A4,int A4,double D8 이라는 데이터 멤버가 있다고 가정했을시
+integer32 는 4 , 8 , 12 , 16 바이트 위치의 시작번지에만 자리 잡을수 있고
+해당 시작번지에 자리잡을수 없다면 그 메모리 크기 만큼 패딩이 들어가는 것이다.
+double64  는 8 , 16 , 24 바이트 위치의 시작번지에만 자리 잡을수 있다.
+ 
+
+* 클래스,구조체의 데이터의 사이즈는 해당 구조체의 가장 큰 데이터 멤버의 배수에서 끝난다.
+Example 위의 예시에서는 double 타입 8 바이트가 가장큰 데이터 멤버이기 때문에
+데이터사이즈의 끝이 8의 배수가 아니라면 8의 배수만큼 패딩이 들어갈것이다.
+
+* 기본적인 CPU의 캐쉬라인 보통 64Byte 에 데이터가 걸치게 된다면 False Sharing 문제가 발생할 수 있다.
+
+## C++ Alignas 참고 사이트
+https://www.youtube.com/watch?v=ZN2c5X-2NAU
+https://en.cppreference.com/w/cpp/language/alignas
+https://en.cppreference.com/w/cpp/language/alignas
+
+ 
+
+ 
+  
