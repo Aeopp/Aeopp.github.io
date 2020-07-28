@@ -20,7 +20,7 @@ Example 위의 예시에서는 double 타입 8 바이트가 가장큰 데이터 
 데이터사이즈의 끝이 8의 배수가 아니라면 8의 배수만큼 패딩이 들어갈것이다.
 
 * 기본적인 CPU의 캐쉬라인 보통 64Byte 에 데이터가 걸치게 된다면 False Sharing 문제가 발생할 수 있다.
-
+.
 ## C++ Alignas 참고 사이트
 https://www.youtube.com/watch?v=ZN2c5X-2NAU
 https://en.cppreference.com/w/cpp/language/alignas
