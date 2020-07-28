@@ -52,7 +52,7 @@ social-network-links:
 #  youtube: user/deanat78
 #  spotify: yourname
 #  telephone: +14159998888
-#  steam: deanat78
+   steam: https://steamcommunity.com/profiles/76561198284805929/home
 #  twitch: yourname
 #  yelp: yourname
 #  telegram: yourname
@@ -66,8 +66,10 @@ share-links-active:
   twitter: true
   facebook: true
   linkedin: true
+  steam: true
+  youtube: true
   vk: false
-
+  
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
 url-pretty: "Aeopp.github.io.com"
