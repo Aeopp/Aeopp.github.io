@@ -1,8 +1,8 @@
 ---
 layout: post
 title: C++ Object Alignment 
-subtitle: 객체 메모리 정렬
-gh-repo: 
+subtitle: Object Alignment 
+gh-repo: Aeopp
 gh-badge: [star, fork, follow]
 tags: [C++]
 comments: true
