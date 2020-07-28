@@ -1,5 +1,14 @@
-비동기 I/O 연산을 통해서 파일에 쓰기작업을 동시접근해서 하는 경우 
-해당 파일의 커널 오브젝트의 파일 포인터는 의미가 없다.
+---
+layout: post
+title: 비동기 I/O 연산시 주의점
+subtitle:  
+gh-repo: Aeopp/os_system_programming
+gh-badge: [star, fork, follow]
+tags: [Operating System]
+comments: true
+---
+
+## 비동기 I/O 연산을 통해서 파일에 쓰기작업을 동시접근해서 하는 경우 해당 파일핸들이 가리키는 커널 오브젝트의 파일 포인터는 의미가 없다.
 
 1. (A,B,C) 함수가 호출되었다고 가정해보자 
 2. 그리고 C 함수를 호출하기 전까지 콜백함수 알림을 받지않는다고 가정한다.
