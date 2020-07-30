@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: 메모리 장벽 과 메모리 가시성
@@ -33,14 +32,14 @@ tags: [I Understand concept, System]
 * 컴파일러의 최적화 (명령어 재배치) 때문에 어떠한 문맥이후에 반드시 이뤄어졌어야할 어떠한 작업은 사실 실행되지 않았을 수도 있다.
 
  두번째 문장은 설명이 좀 필요할 것 같은데
+ 
 {% highlight javascript linenos %}
  void foo(void)
  {
-		 bool _flag = false ;
-		   int value =0;
-		   
-		_flag = true;
-		value =77;
+	  bool _flag = false ;
+	  int value =0;
+	  _flag = true;
+	  value =77;
  }
 {% endhighlight %}
 
@@ -52,6 +51,8 @@ value 의 값이 77이라고 확신할 수 있을까?
 
 	value =77;
     _flag = true;
+
+
 ## 이렇게 바뀔 수 있다.
 
 결국 프로그래머는 멀티쓰레드 프로그래밍에서 변수의 값을 수정한 이후에 동기화가 필요한지 아닌지 적절히 판단해야 하며 종속적이지 않은 명령어는 재배치 될수 있다는 사실을 머릿속에 가지고 프로그래밍 해야한다.
@@ -83,59 +84,28 @@ atomic 는 변수의 값을 말그래도 **원자적으로** 수행한다.  값�
 C++ 에서 Memory Order 이라는 개념이 등장하는데 atomic 변수에 값을 변경할떄에 옵션으로 acquire 와 release 라는 옵션이 존재한다. 컴파일러는 acquire 옵션 이후에 코드들을 acquire 옵션 이전으로 재배치하지 않고
 release 이전의 코드들을 release 이후로 재배치 하지 않는다.
 
-
+{% highlight javascript linenos %}
 void bar()
 {
 
-		// 획득 이후 코드들은 절대 이쪽으로 배치 될 수 없다.
-**acquire !!** 
-cmd a....
-    cmd b.....
-    cmd c.....	
+// 획득 이후 코드들은 절대 이쪽으로 배치 될 수 없다.
+   **acquire !!** 
+	cmd a....
+	cmd b.....
+	cmd c.....	
 };
+{% endhighlight %}
 
+{% highlight javascript linenos %}
 void foo()
 {
 	cmd a....
     cmd b.....
     cmd c.....	
 	**release !!** 
-
-		// 배포 이후 코드들은 절대 이쪽으로 배치 될 수 없다.
-
+// 배포 이후 코드들은 절대 이쪽으로 배치 될 수 없다.
 };
+{% endhighlight %}
 
 **배포(Release) 하기 이전의 메모리 변경사항을 메모리로 Flush 하겠다는 것이고
 그것을 획득(Acquire) 한 이후에 메모리에 반영된 값들을 Read 하겠다는 것이다.**
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-		
-
-
-
- 
-
-
-
-
-
-
