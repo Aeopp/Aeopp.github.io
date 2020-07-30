@@ -2,13 +2,13 @@
 layout: post
 title: 메모리 장벽 과 메모리 가시성
 subtitle: Memory Fence Memory Visibility
-cover-img: /assets/img/path.jpg
-share-img: /assets/img/path.jpg
-tags: [I Understand concept, System]
+tags: [Multi-thread, System,C++]
 ---
 
 ## Memory Visibility (메모리 가시성)
 ## Memory Fence(메모리 장벽)
+
+
 
 #### C++ 11 이후부터 표준에 memory_order 이라는 개념이 추가되었다고 한다.
 
@@ -89,7 +89,7 @@ void bar()
 {
 
 // 획득 이후 코드들은 절대 이쪽으로 배치 될 수 없다.
-   **acquire !!** 
+   acquire !! 
 	cmd a....
 	cmd b.....
 	cmd c.....	
@@ -102,7 +102,7 @@ void foo()
 	cmd a....
     cmd b.....
     cmd c.....	
-	**release !!** 
+	release !!
 // 배포 이후 코드들은 절대 이쪽으로 배치 될 수 없다.
 };
 {% endhighlight %}
