@@ -2,6 +2,8 @@
 layout: post
 title: 메모리 장벽 과 메모리 가시성
 subtitle: Memory Fence Memory Visibility
+gh-repo: Aeopp/Multithread_programming
+gh-badge: [star, fork, follow]
 tags: [Multi-thread, System,C++]
 ---
 
@@ -24,8 +26,7 @@ tags: [Multi-thread, System,C++]
 
  각각의 코어(CPU) 들은 메인 메모리는 공유하지만 각각의 레지스터와 캐쉬를 가지고 있다 (이 레지스터 정보가 쓰레드마다 다르기 때문에 싱글코어에서도 Race condition 문제가 발생하는 것이라는 것을 짚고 넘어가고 싶다.)
 
- 또한 컴파일러의 최적화 덕분에 CPU는 메인메모리가 아닌 레지스터와 캐쉬를 최대한 사용하도록 동작되며 dependent 한 관계가 아닌 코드들 이라면 컴파일러는 효율성을 위해 명령어를 재배치 할 수 있다.
- 
+ 또한 컴파일러의 최적화 덕분에 CPU는 메인메모리가 아닌 레지스터와 캐쉬를 최대한 사용하도록 동작되며 dependent 한 관계가 아닌 코드들 이라면 컴파일러는 효율성을 위해 명령어를 재배치 할 수 있
  #### 이것이 의미하는 바가 무엇일까? 
  
 * 각 코어(쓰레드) 마다 캐쉬가 독립적이므로 코어마다 같은 시각의 관찰한 변수의 값이 다를 수 있다 (!!!!) .
