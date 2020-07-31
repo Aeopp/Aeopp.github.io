@@ -10,14 +10,14 @@ tags: [Multi-thread, System,C++]
 * async 의 return value (future object) 를 무시하면  launch policy 를 async 로 설정하였더라도 task는  동기적으로 수행된다. 
 * async 로 launch 된 task 는 공유메모리에 대해 접근순서 동기화를 수행한다.
 
-각종 테스트를 해보면서 값을 관찰하였는데 async 함수 호출시 반환되는 future 객체를 버리면 nodiscard attribute 경고가 나타난다.(에러는 아님) 
-문제는 future 객체를 받지않고 리턴값을 버리면 async 로 호출한 함수가 동기적으로 호출된다는것....
- 해당함수의 작업이 끝날때까지 blocking 될텐데 이러면 사용하는 의미가 없다. (일반함수 호출을 하고말지)
- 
- 아마도 현재 테스트한 컴파일러 제조사의 구현이 async launch policy 를 지정하지 않았을시 async 로 설정되며 future 반환값을 무시하였으니 future 객체의 wait 를 호출하였을때와 똑같은 메커니즘으로 
- 함수를 호출하는것이 아닐까 예상한다.
- 
-cppreference 로 명세를 읽어보아도 언급을 하지 않는...것 같다 (내 영어가 짧아서 놓친걸수도..)
+         1 async(launch::async,f);
+         2 async(launch::async,g);
+
+호출시 반환값을 버리면 1번라인의 실행이 끝날때 까지 2번라인이 blocking 되는걸 볼 수 있다.
+### 왜 blocking 되는 걸까? async 는 비동기화 호출인데 ?? 
+그렇긴 한데 여기서 한가지 알아야 할 점이 있다. launch::async 로 policy 를 지정해서 future 객체를 얻었다면 해당 객체의 **소멸자가 wait 를 호출하기 때문이다.**
+저기서 launch policy 를 매개변수로 받지 않는 오버로딩으로 호출하여도 컴파일러 제조사의 구현이 default policy가 async launch 라면 결과는 똑같을 것이다. (MSVC 는 async 인듯 결과 똑같은것 확인)
+해결방법은 뭐 별 수 있나 future 를 제대로 받아서 라이프 사이클을 늘려야지 뭐
 
 또한 async 로 실행되는 task 는 내부적으로 lock 를 건다든지 해서 공유메모리에 대해 접근순서 동기화를 해주는것 같다.  atomic 나 semaphore 를 사용하지 않아도 
 race condition 이 일어나지 않는다....
