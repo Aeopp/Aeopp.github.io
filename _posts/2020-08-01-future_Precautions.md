@@ -6,8 +6,8 @@ gh-badge: [star, fork, follow]
 tags: [Multi-thread, System,C++]
 ---
 
-* ### async 의 return value (future object) 를 무시하면  launch policy 를 async 로 설정하였더라도 task는  동기적으로 수행된다. 
-* ### async 로 launch 된 task 는 공유메모리에 대해 접근순서 동기화를 수행한다.
+* async 의 return value (future object) 를 무시하면  launch policy 를 async 로 설정하였더라도 task는  동기적으로 수행된다. 
+* async 로 launch 된 task 는 공유메모리에 대해 접근순서 동기화를 수행한다.
 
 각종 테스트를 해보면서 값을 관찰하였는데 async 함수 호출시 반환되는 future 객체를 버리면 nodiscard attribute 경고가 나타난다.(에러는 아님) 
 문제는 future 객체를 받지않고 리턴값을 버리면 async 로 호출한 함수가 동기적으로 호출된다는것....
