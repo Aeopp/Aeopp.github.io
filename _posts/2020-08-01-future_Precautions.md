@@ -1,11 +1,12 @@
 ---
 layout: post
-title:  C++ future promise async 사용시 주의사항
+title:C++ future promise async 사용시 주의사항
 gh-repo: Aeopp/Multithread_programming
 gh-badge: [star, fork, follow]
-tags: [주의사항?,C++,Multi thread enviroment]
+tags: [Multi-thread, System,C++]
 comments: true
 ---
+
 * ### async 의 return value (future object) 를 무시하면  launch policy 를 async 로 설정하였더라도 task는  동기적으로 수행된다. 
 * ### async 로 launch 된 task 는 공유메모리에 대해 접근순서 동기화를 수행한다.
 
