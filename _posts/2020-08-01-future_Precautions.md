@@ -1,6 +1,7 @@
 ---
 layout: post
-title:C++ future promise async 사용시 주의사항
+title: future promise async 사용시 주의사항
+subtitle:
 gh-repo: Aeopp/Multithread_programming
 gh-badge: [star, fork, follow]
 tags: [Multi-thread, System,C++]
