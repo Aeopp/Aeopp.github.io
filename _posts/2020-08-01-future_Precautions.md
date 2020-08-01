@@ -38,4 +38,3 @@ future 마지막 객체가 소멸되었을때 소멸자에서 blocking 되는 �
 async 로 실행되는 task 는 내부적으로 lock 를 건다든지 해서 공유메모리에 대해 접근순서 동기화를 해주는것 같다.  
 atomic 나 semaphore 를 사용하지 않고 아무리 테스트를 해보아도 race condition 이 일어나지 않는다.
 진짜 뭐냐 ?? 마법이야 ???
- 
