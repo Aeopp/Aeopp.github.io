@@ -1,4 +1,4 @@
- ---
+---
 layout: post
 title: 평면의 방정식
 subtitle: Plane Equations
@@ -7,9 +7,6 @@ gh-badge: [star, fork, follow]
 tags: [math]
 comments: true
 ---
-
-This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](https://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
-
 
 ## 평면의 방정식
 
@@ -28,11 +25,11 @@ a(x-x0) + b(y-y0) + c(z-z0) =0
 방정식의 값이 양수일때에는 평면의 
 법선벡터 좌표의 내적의 결과가 0 ~ π/2 사이라는 의미이다. 
 때문에 평면 안쪽에 존재한다고 해석하면 된다 (법선벡터가 가리키는 방향)
-![plane2](/assets/_img/plane2.png)
+![plane0](/assets/img/plane0.png)
 
 이 앞뒤 판단은 카메라 뷰 프러스텀을 평면으로 구성한 이후에 컬링할때에 자주 사용된다.
 
-![plane3](/assets/_img/plane3.png)
+![plane3](/assets/img/plane3.png)
 
 앞서 평면의 방정식을 언급하였는데 식을 전개하여서 간단히 만들어 보자. 
 a(x-x0) + b(y-y0) + c(z-z0) =0 
@@ -47,33 +44,24 @@ ax+by+cz = -d   여기서 x,y,z 는 평면상의 한 점
 
 프로그래밍적으로 구현할때에는 무한 평면을 의미하는 노멀벡터와 평면상의 한점의 내적의 음수값을 -d 로 사용하면  x,y,z 를 매개변수를 받아와서 손쉽게 평면기준 위치를 구할 수 있다
 
+평면과 점의 최단거리는 평면의 법선벡터와 평면의 임의의 한점이 시점 구하고자 하는 점을 종점으로 하는 벡터를 만든 이후 두 벡터의 내적의 결과값을 평면의  법선벡터의 길이로 나누면 된다.
+![plane4](/assets/img/plane4.png)
+첨부한 그림에는 평면의 한점과 법선의 시점이 일치하지만 꼭 일치해야할 필요는 없다
+(평면상의 한점이면 됨)
+
 {% highlight javascript linenos %}
 float Collision_PlaneToPoint(vec3 n /*평면 법선*/,vec3 p/*평면위의 점*/,
 vec3 pos /*구하고자 하는 점*/)
 {
+	
 	// 원점과 평면과의 거리를 구한다.
 	float d = 	-dot(n,p);
-	// 클라이언트 코드에서 정의한 앱실론범위 이내라면 평면상의 점이다.
+	//평면 법선이 정규화 되어있다면 반환값은 평면과 점의 최단거리를 의미한다.
 	return dot(n,pos) + d;
 };
 {% endhighlight %}
 
+![plane2](/assets/img/plane2.png)
 
+![plane1](/assets/img/plane1.png)
 
-## Boxes
-You can add notification, warning and error boxes like this:
-
-### Notification
-
-{: .box-note}
-**Note:** This is a notification box.
-
-### Warning
-
-{: .box-warning}
-**Warning:** This is a warning box.
-
-### Error
-
-{: .box-error}
-**Error:** This is an error box.
