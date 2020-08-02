@@ -11,7 +11,7 @@ comments: true
 
 **등가속도란 가속도가 일정하다는 것을 의미하며 등가속도 상태에서 운동하는 것을 등가속도 운동이라고 한다.**
 
-![picture](assets\img\acceleration1.png)
+![picture](\assets\img\acceleration1.png)
 
 처음속도라는것은 (시간) t=0 일때 물체의 속도를 가리킨다.
 물체에 따라 어느정도 속도가 있는것도 존재하므로
@@ -62,9 +62,9 @@ float t)
 2차원과 3차원으로 확장시켜 속도와 위치를 벡터로 표현하면 
 아래 그림처럼 회전 같은 움직임도 표현이 가능하다.
 
-![picture2](assets\img\acceleration2.png)
+![picture2](\assets\img\acceleration2.png)
 
-**코드로 적용시키고 시뮬 돌려봄**
+**코드로 적용시키면 대충 요래 된다.**
 ```c++
 #include <iostream>
 #include <type_traits>
