@@ -62,7 +62,7 @@ float t)
 2차원과 3차원으로 확장시켜 속도와 위치를 벡터로 표현하면 
 아래 그림처럼 회전 같은 움직임도 표현이 가능하다.
 
-![picture2](\assets\img\acceleration2.png)
+![picture2](/assets/img/acceleration2.png)
 
 **코드로 적용시키면 대충 요래 된다.**
 ```c++
