@@ -11,7 +11,7 @@ comments: true
 
 **등가속도란 가속도가 일정하다는 것을 의미하며 등가속도 상태에서 운동하는 것을 등가속도 운동이라고 한다.**
 
-![picture](\assets\img\acceleration1.png)
+![picture](/assets/img/acceleration1.png)
 
 처음속도라는것은 (시간) t=0 일때 물체의 속도를 가리킨다.
 물체에 따라 어느정도 속도가 있는것도 존재하므로
