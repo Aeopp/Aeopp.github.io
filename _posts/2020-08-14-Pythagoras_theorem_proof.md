@@ -4,7 +4,7 @@ title: 피타고라스의 정리를 증명해보자
 subtitle:Pythagoras theorem proof
 gh-repo:
 gh-badge: [star, fork, follow]
-tags: [Mathematical]
+tags: [math]
 comments: true
 ---
 
