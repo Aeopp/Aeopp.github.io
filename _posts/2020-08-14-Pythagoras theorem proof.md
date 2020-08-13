@@ -1,7 +1,9 @@
 ---
 layout: post
 title:피타고라스의 정리를 증명해보자
-subtitle:
+subtitle:Pythagoras theorem proof
+gh-repo:
+gh-badge: [star, fork, follow]
 tags: [Mathematical]
 comments: true
 ---
