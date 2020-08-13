@@ -15,7 +15,7 @@ comments: true
 **해당 삼각형의 빗변들로 이루어진 정사각형을 그려준다.**
 
 
-![picture](/assets/img/Pythagoras/_1.png)
+![picture](/assets/img/Pythagoras_1.png)
 
 ### 요렇게
 
