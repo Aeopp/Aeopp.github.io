@@ -5,6 +5,7 @@ subtitle:Pythagoras theorem proof
 gh-repo:
 gh-badge: [star, fork, follow]
 tags: [math]
+comments: true
 ---
 
 # 피타고라스의 정리를 증명 해보자.
