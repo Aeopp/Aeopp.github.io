@@ -1,3 +1,12 @@
+---
+layout: post
+title: English Syntax
+subtitle: English Syntax
+gh-repo:
+gh-badge: [star, fork, follow]
+tags: [English]
+comments: true
+---
 
 # Eng_Syntax
 ## 기술 문서를 읽을때 술술 읽어보자 :)
