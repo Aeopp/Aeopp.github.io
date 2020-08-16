@@ -94,67 +94,13 @@ $$c = a + b $$
 
 
 $$|c|^2 = |a+b|^2 $$
- $$= |a|^2 + 2a ·b +|b|^2$$
- $$= |a|^2 + 2|a||b|cos(180-θ) + |b|^2 $$
+$$= |a|^2 + 2a ·b +|b|^2$$
+$$= |a|^2 + 2|a||b|cos(180-θ) + |b|^2 $$
  
 	 이때  cos(180 - θ)  = -cos θ 이므로
 
  $$|c|^2 = |a|^2 + |b|^2  - 2|a||b|cosθ = c^2 = a^2+b^2 - 2ab cos θ $$
  이므로 코사인 법칙이 성립함을 알 수 있다.
-
-
-
-
-\documentclass[12pt]{article}
-\usepackage{kotex}
-\begin{document}
-
-superscripts : 지수표기, 중괄호로 묶어야 삽입됨\\
-$2x^3$ 
-$$2x^3$$
-$$2x^34$$
-$$2x^{34}$$
-$$2x^{3x+4}$$
-$$2x^{3x^4+5}$$
-
-subscripts: 행렬표기. X12를 원하면앞에 1을 중괄호로 묶고 언더바로 입력
-$$x_1$$
-$$x_{12}$$
-$${x_1}_2$$
-$${{x_1}_2}_3$$
-
-greek letters: 그리스문자\\
-$$\pi$$
-$$\alpha$$
-$$A=\pi r^2$$
-
-trig functions: 삼각함수\\
-$$\sin{x}$$
-$$y=\sin{x}$$
-
-log functions: 로그함수\\
-$$\log{x}$$
-$$\log_5{x}$$
-$$\ln{x}$$
-\\
-\\
-
-square roots: 루트함수\\
-$$\sqrt{2}$$
-$$\sqrt[3]{2}$$
-$$\sqrt{x^2+y^2}$$
-$$\sqrt{1+\sqrt{x}}$$
-
-fractions: 분수표기, displaystyle을 적용하면 커짐\\
-About 2/3 of the glass is full.\\
-About $2/3$ of the glass is full.\\
-About $\frac{2}{3}$ of the glass is full.\\
-About $\displaystyle{\frac{2}{3}}$ of the glass is full.
-$$\frac{x}{x^2+x+1}$$
-$$\frac{\sqrt{x+1}}{\sqrt{x-1}}$$
-$$\frac{1}{1+\frac{1}{x}}$$
-$$\sqrt{\frac{x}{x^2+x+1}}$$
-
 
 
 
