@@ -7,6 +7,9 @@ gh-badge: [star, fork, follow]
 tags: [math]
 comments: true
 ---
+html header: <script type="text/javascript"  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
 # 일반 삼각형에서의 사인과 코사인
 
 ## 일반 삼각형의 사인 법칙
