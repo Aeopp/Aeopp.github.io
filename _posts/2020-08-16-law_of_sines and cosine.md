@@ -7,8 +7,6 @@ gh-badge: [star, fork, follow]
 tags: [math]
 comments: true
 ---
-html header: <script type="text/javascript"  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
 
 # 일반 삼각형에서의 사인과 코사인
 
@@ -77,12 +75,12 @@ html header: <script type="text/javascript"  src="http://cdn.mathjax.org/mathjax
 
 증명을 하기에 앞서 잠깐 벡터의 내적에 대해 조금만 살펴보자.
 
-$$A · B= |A| |B| cos (θ) $$
+***A · B= |A| |B| cos (θ)***
 여기서 theta 는 두 벡터사이의 각이다.
 
 동일한 벡터는 각이 0 라디안이고 cos(0) 의 값은 1이기 때문에 다음이 성립한다.
 
-$$ |A|²= A·A$$
+***|A|²= A·A***
 
 이제 본격적으로 증명 해보자.
 
@@ -93,18 +91,18 @@ $$ |A|²= A·A$$
 그럼 벡터 c는 다음과 같다.
 
 
-$$c = a + b $$
+***c = a + b***
 
 
-$$|c|^2 = |a+b|^2 $$
-$$= |a|^2 + 2a ·b +|b|^2$$
-$$= |a|^2 + 2|a||b|cos(180-θ) + |b|^2 $$
+***|c|^2 = |a+b|^2***
+***= |a|^2 + 2a ·b +|b|^2***
+***= |a|^2 + 2|a||b|cos(180-θ) + |b|^2 ***
  
 	 이때  cos(180 - θ)  = -cos θ 이므로
 
- $$|c|^2 = |a|^2 + |b|^2  - 2|a||b|cosθ = c^2 = a^2+b^2 - 2ab cos θ $$
+ ***|c|^2 = |a|^2 + |b|^2  - 2|a||b|cosθ = c^2 = a^2+b^2 - 2ab cos θ***
+ 
  이므로 코사인 법칙이 성립함을 알 수 있다.
-
 
 
 
