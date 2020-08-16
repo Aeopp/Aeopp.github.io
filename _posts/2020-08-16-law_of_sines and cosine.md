@@ -7,7 +7,6 @@ gh-badge: [star, fork, follow]
 tags: [math]
 comments: true
 ---
-
 # 일반 삼각형에서의 사인과 코사인
 
 ## 일반 삼각형의 사인 법칙
@@ -29,6 +28,10 @@ comments: true
 	여기서 abc 로 각 항을 나눠주자.
 	bc sin (A) / abc = ac sin(B) / abc  = ab sin(C) / abc
 	= sin(A) / a = sin(B) / b  = sin(C) / c 
+
+[여기를 참고하면 증명에 대해 더 알 수 있다.](https://ko.wikipedia.org/wiki/%EC%82%AC%EC%9D%B8_%EB%B2%95%EC%B9%99)
+[외적으로도 증명할 수 있다.](https://namu.wiki/w/%EC%82%AC%EC%9D%B8%20%EB%B2%95%EC%B9%99#toc)
+
 
 이 법칙은 다음과 같이 표현 할 수도 있다.
 두 변의 길이의 비는 각 변과 마주 보는 각의 크기에 대한 사인값의 비와 같다.
@@ -55,4 +58,17 @@ comments: true
 
 	case a : x / 15 = sin(43) / sin(79)  <=>  x =  15 sin(43) / sin(79) = 10.42
 	case b : x / sin(43) = 15 / sin(79) <=> x = 15 sin(43) / sin(79) = 10.42
+
+	
+
+
+
+
+
+
+
+
+
+
+
 
