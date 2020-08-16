@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 일반 삼각형의 사인 법칙
-subtitle: law of sines of common triangle
+title: 일반 삼각형의 사인과 코사인 법칙
+subtitle: law of sines and cosine of common triangle
 gh-repo:
 gh-badge: [star, fork, follow]
 tags: [math]
