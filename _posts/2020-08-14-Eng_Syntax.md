@@ -7,7 +7,6 @@ gh-badge: [star, fork, follow]
 tags: [English]
 comments: true
 ---
-
 **기술 문서를 읽을때 술술 읽어보자 :)**
 
 ## 영어의 ~인칭 표현
@@ -270,18 +269,58 @@ How 와 be동사가 조합하면 어떻게 + 상태
 **How long does it take?**
 How long +does it take => 얼마나 (시간이) 걸리니?
 
+## It,That,This
+
+**헷갈리는 지시대명사를 정리해보자**
 
 
+| It | That  | This |
+| :---: | :---: | :---: |
+| 앞서 언급했던 **단수**명사(대명사) 대신 사용| 멀리 있는 것 , 방금 한 행동이나 말 | 가까이 있는 것 , 지금 보여지고 있는 것|
+
+**This 를 사용하는 상황**
+
+예시 
+
+*What can I get for a quarter?*
+25센트로 뭘 사죠 ? 
+***This***
+이거! (잡상인이 자신이 들고있는 물건을 가리키며 하는 말)
+
+정리
+
+* 가까이 있는 것
+* 지금 보여지고 있는 것
+
+**That 를 사용하는 상황**
+
+예시
+
+*That's right!*
+맞아 ! (너가 방금 한 행동이나 말이 맞다!)
+
+*I liked your piece.*
+당신의 글 좋더군요.
+*I said ***that*** on the phone.*
+내가 그걸 전화로 말했었죠.  (여기서 that 는 I liked your piece 라는 화자가 방금 했던말을 뜻하는 지시대명사로 쓰임.)
+
+*That want buy.*
+저거 사고 싶다! (멀리 있는 상품을 바라보며)
+
+**It 를 사용하는 상황**
+
+(어떤 상인이 자신이 판매할려는 물건에 대해 언급한 이후)
+*It's fantasic. 앞서 언급하였던 단수명사 대신 대명사 It을 사용*
 
 
+**It 과 That 는 둘 다 방금했던 문장에 대한 지시대명사로 많이 쓰이나 It 은 중립적,That 는 좀 더 강조하는 뉘앙스가 있다고 한다.**
 
+친구가 어제 본 영화가 너무 재밌었다고 떠드는 상황에서 한번 대답해보자.
 
-
-
-
-
-
-
+**It vs That**
+* *I saw watch movie that's so great!!* 야 내가 본 영화 개꿀잼!
+	* *That's great(긍정적인 뉘앙스,맞장구 쳐주는 뉘앙스)*
+	* *It's great(중립적)*
 
 
 
